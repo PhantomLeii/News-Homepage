@@ -11,7 +11,7 @@
 }
 
 html {
-    /* overflow-x: hidden; */
+    overflow: hidden;
     scroll-behavior: smooth;
     font-family: "Inter", sans-serif;
     font-size: 16px;
@@ -25,7 +25,7 @@ html {
 }
 
 body {
-    padding: 6rem;
+    padding: 3rem 6rem;
 }
 
 #mobile-menu {
@@ -47,6 +47,11 @@ header {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 4rem;
+}
+
+main {
+    display: grid;
+    gap: 6rem;
 }
 
 .nav-link {
@@ -153,4 +158,39 @@ h1 {
 .lead button:hover {
     background-color: var(--very-dark-blue);
     color: var(--off-white);
+}
+
+#Trending {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem
+}
+
+.headline-img img {
+    height: 8rem;
+    float: left;
+    margin-right: 2rem;
+}
+
+#Trending h2 {
+    color: var(--grayish-blue);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+#Trending h3 {
+    color: var(--very-dark-blue);
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+#Trending p {
+    color: var(--dark-grayish-blue);
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+@media (min-width: 1441px) {
+
 }
