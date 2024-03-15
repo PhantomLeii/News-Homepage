@@ -24,6 +24,31 @@ html {
     box-sizing: border-box;
 }
 
+body {
+    padding: 6rem;
+}
+
+#mobile-menu {
+    display: none;
+}
+
+header {
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.nav-link {
+    color: var(--dark-grayish-blue);
+    margin-right: 2rem;
+    transition: .28s ease;
+}
+
+.nav-link:hover {
+    color: var(--soft-red);
+}
 
 .attribution {
     font-size: 11px;
