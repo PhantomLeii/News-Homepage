@@ -11,7 +11,7 @@
 }
 
 html {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     scroll-behavior: smooth;
     font-family: "Inter", sans-serif;
     font-size: 16px;
@@ -32,6 +32,15 @@ body {
     display: none;
 }
 
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
 header {
     height: fit-content;
     display: flex;
@@ -41,6 +50,7 @@ header {
 }
 
 .nav-link {
+    font-weight: 400;
     color: var(--dark-grayish-blue);
     margin-right: 2rem;
     transition: .28s ease;
@@ -50,11 +60,55 @@ header {
     color: var(--soft-red);
 }
 
-.attribution {
-    font-size: 11px;
-    text-align: center;
+#Hero {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, .5fr);
+    gap: 2rem;
 }
 
-.attribution a {
-    color: hsl(228, 45%, 44%);
+.img {
+    grid-column: span 2;
+}
+
+#Web3-block {
+    width: 100%;
+}
+
+#New {
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    padding: 1.1rem;
+    background-color: var(--very-dark-blue);
+}
+
+#New h2 {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-top: 2rem;
+    color: var(--soft-orange);
+}
+
+.topic {
+    border-bottom: 2px solid var(--dark-grayish-blue);
+    padding: 2rem 0;
+}
+
+.topic h3 {
+    color: var(--off-white);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.topic p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--dark-grayish-blue);
+}
+
+.no-border {
+    border-bottom: none;
 }
