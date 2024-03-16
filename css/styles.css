@@ -11,6 +11,7 @@
 }
 
 html {
+    overflow-x: hidden;
     scroll-behavior: smooth;
     font-family: "Inter", sans-serif;
     font-size: 16px;
@@ -40,12 +41,28 @@ body {
     color: hsl(228, 45%, 44%);
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 2rem 6rem;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.7);
+    z-index: 100;
+}
+
 header {
     height: fit-content;
+    margin-bottom: 4rem;
+    transition: .28s ease;
+}
+
+#navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 4rem;
+    transition: .23s ease;
 }
 
 main {
@@ -191,5 +208,7 @@ h1 {
 }
 
 @media (min-width: 1441px) {
-
+    body {
+        padding: 3rem 36rem;
+    }
 }
